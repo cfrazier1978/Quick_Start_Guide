@@ -1,58 +1,72 @@
 # Quick Start Guide - Labs Platform
-Purpose
+## Purpose
 The purpose of this document is to list out the steps someone would take when starting a new project all the way through sharing that project with others.
-Part 1: Getting Started
+## Part 1: Getting Started
 The following steps will walk you through creating a new repo in GitHub, importing the repo into the Labs Platform and then cloning a platform compatible cadCAD template.
 
-Create a new repo in GitHub
-Give your repository a name.
-Provide a description of the repository (Optional)
-Decide if you want the repository to be public or private
-This decision will not affect your ability to bring the repository into the Labs Platform.  All repositories are treated as private by default within the Labs Platform until you invite others to your project.
-Choose the type of license to apply to your repository.
-Click ‘Create Repository’.
+- Create a new repo in GitHub
+     - Give your repository a name.
+    - Provide a description of the repository (Optional)
+    - Decide if you want the repository to be public or private
+        - This decision will not affect your ability to bring the repository into the Labs Platform.  All repositories are treated as private by default within the Labs Platform until you invite others to your project.
+    - Choose the type of license to apply to your repository.
+    - Click ‘Create Repository’.
+
+![](https://drive.google.com/file/d/1u3846O-Q1zhTn0ps8wAy34WG_W6mAJYU/view?usp=sharing)
+
+
+![Test](https://drive.google.com/file/d/1u3846O-Q1zhTn0ps8wAy34WG_W6mAJYU/view?usp=sharing)
+
+
+
+![Create a Repo](https://jupyterhub.blocksciencelabs.com/user/3/quick_start_guide-75/lab/tree/Quick_Start_Guide/Create%20a%20new%20repository.png)
+
+
 
 ![Create a Repo](D:\BSCI Labs\Images\Quick Start Guide\Create a New Repository.png)
 
-
-Navigate to app.blocksciencelabs.com
-If you do not have an account, follow the flow to create a new account.  You can see a video of these steps here: https://www.youtube.com/watch?v=Ev6nl2sI-7U
-Click on ‘New Project’ on the Projects dashboard.
-Find the new repository you just created in GitHub.
-Provide the project a name.
-Provide the project a description (Optional)
-Click ‘Create’.  This will add the project to your project dashboard.
+![Create a Repo](Quick_Start_Guide/Quick_Start_Guide/Create a New Repository.png)
 
 
 
-Click on the name of your new project.
-Navigate to the tab labeled ‘Notebook’
-It takes about 1 minute for a link to appear labeled ‘Open JupyterHub Server’.
-Click on the link labeled ‘Open JupyterHub Server’.
+- Navigate to app.blocksciencelabs.com
+    - If you do not have an account, follow the flow to create a new account.  You can see a video of these steps here: https://www.youtube.com/watch?v=Ev6nl2sI-7U
+- Click on ‘New Project’ on the Projects dashboard.
+    - Find the new repository you just created in GitHub.
+    - Provide the project a name.
+    - Provide the project a description (Optional)
+    - Click ‘Create’.  This will add the project to your project dashboard.
+
+
+
+- Click on the name of your new project.
+- Navigate to the tab labeled ‘Notebook’
+    - It takes about 1 minute for a link to appear labeled ‘Open JupyterHub Server’.
+    - Click on the link labeled ‘Open JupyterHub Server’.
 
 
 
 
-On the upper right side of the screen, click on the dropdown menu labeled ‘New’ and select ‘Terminal’.
+- On the upper right side of the screen, click on the dropdown menu labeled ‘New’ and select ‘Terminal’.
 
 
 
-Create a new directory by typing: mkdir <dir name>
-Example 1: mkdir my_test_dir
-Example 2: mkdir My_Labs_Project
-Type cd <dir name>
-Example 1: cd my_test_dir
-Example 2: cd My_Labs_Project
-Now that you are in your new directory, type: cadcad-cli --interactive
-NOTE: This will allow you to clone the cli tool that contains a template for a Labs compatible project.  You can use this as a starting point for your model.  The cli tool has many other useful templates for creating cadCAD models.  Check out https://github.com/cadCAD-org/cadcad-cli to learn more.
-The terminal will return the following text: Template <simple|normal>:
-Type: labs
-Example: Template <simple|normal>: labs
-You will see the following output:
+- Create a new directory by typing: mkdir <dir name>
+    - Example 1: mkdir my_test_dir
+    - Example 2: mkdir My_Labs_Project
+- Type cd <dir name>
+    - Example 1: cd my_test_dir
+    - Example 2: cd My_Labs_Project
+- Now that you are in your new directory, type: cadcad-cli --interactive
+    - NOTE: This will allow you to clone the cli tool that contains a template for a Labs compatible project.  You can use this as a starting point for your model.  The cli tool has many other useful templates for creating cadCAD models.  Check out https://github.com/cadCAD-org/cadcad-cli to learn more.
+    - The terminal will return the following text: Template <simple|normal>:
+    - Type: labs
+    - Example: Template <simple|normal>: labs
+    - You will see the following output:
 
-At this point you have two options:
-Option A: Go to your local environment and work with the new repo to build your model.
-Option B: Close the terminal window and work within the Labs Platform in JupyterHub, updating each file to build your model.
+- At this point you have two options:
+    - Option A: Go to your local environment and work with the new repo to build your model.
+    - Option B: Close the terminal window and work within the Labs Platform in JupyterHub, updating each file to build your model.
 
 
 NOTE: If you are building your model in the Labs Platform, be sure to commit your changes in the terminal.  To do so, you will need to do the following:
@@ -60,7 +74,7 @@ NOTE: If you are building your model in the Labs Platform, be sure to commit you
 TBD
 
 
-Part 2: Running your Experiments
+## Part 2: Running your Experiments
 Once you have a working model, you can then run your experiments in the Labs Platform.
 
 What you will need:
