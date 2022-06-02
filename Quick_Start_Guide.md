@@ -12,7 +12,7 @@ The following steps will walk you through creating a new repo in GitHub, importi
     - Choose the type of license to apply to your repository.
     - Click ‘Create Repository’.
 
-![](https://drive.google.com/file/d/1u3846O-Q1zhTn0ps8wAy34WG_W6mAJYU/view?usp=sharing)
+![Create a Repo](https://drive.google.com/file/d/1u3846O-Q1zhTn0ps8wAy34WG_W6mAJYU/view?usp=sharing)
 
 
 ![Test](https://drive.google.com/file/d/1u3846O-Q1zhTn0ps8wAy34WG_W6mAJYU/view?usp=sharing)
