@@ -22,7 +22,7 @@ The following steps will walk you through creating a new repo in GitHub, importi
     - Provide the project a description (Optional)
     - Click ‘Create’.  This will add the project to your project dashboard.
 
-
+![Import Project from GitHub](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/Import%20Project%20from%20GitHub.png)
 
 - Click on the name of your new project.
 - Navigate to the tab labeled ‘Notebook’
@@ -49,6 +49,8 @@ The following steps will walk you through creating a new repo in GitHub, importi
     - Example: Template <simple|normal>: labs
     - You will see the following output:
 
+![Output from Terminal](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/CLI%20Output%20from%20Terminal.png)
+    
 - At this point you have two options:
     - Option A: Go to your local environment and work with the new repo to build your model.
     - Option B: Close the terminal window and work within the Labs Platform in JupyterHub, updating each file to build your model.
