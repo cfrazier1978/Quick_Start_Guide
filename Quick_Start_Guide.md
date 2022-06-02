@@ -12,22 +12,7 @@ The following steps will walk you through creating a new repo in GitHub, importi
     - Choose the type of license to apply to your repository.
     - Click ‘Create Repository’.
 
-![Create a Repo](https://drive.google.com/file/d/1u3846O-Q1zhTn0ps8wAy34WG_W6mAJYU/view?usp=sharing)
-
-
-![Test](https://drive.google.com/file/d/1u3846O-Q1zhTn0ps8wAy34WG_W6mAJYU/view?usp=sharing)
-
-
-
-![Create a Repo](https://jupyterhub.blocksciencelabs.com/user/3/quick_start_guide-75/lab/tree/Quick_Start_Guide/Create%20a%20new%20repository.png)
-
-
-
-![Create a Repo](D:\BSCI Labs\Images\Quick Start Guide\Create a New Repository.png)
-
-![Create a Repo](Quick_Start_Guide/Quick_Start_Guide/Create a New Repository.png)
-
-
+![Create a Repo](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/Create%20a%20new%20repository.png)
 
 - Navigate to app.blocksciencelabs.com
     - If you do not have an account, follow the flow to create a new account.  You can see a video of these steps here: https://www.youtube.com/watch?v=Ev6nl2sI-7U
