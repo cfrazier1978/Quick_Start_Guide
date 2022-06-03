@@ -4,8 +4,8 @@ The purpose of this document is to list out the steps someone would take when st
 ## Part 1: Getting Started
 The following steps will walk you through creating a new repo in GitHub, importing the repo into the Labs Platform and then cloning a platform compatible cadCAD template.
 
-- Create a new repo in GitHub
-     - Give your repository a name.
+1. Create a new repo in GitHub
+    - Give your repository a name.
     - Provide a description of the repository (Optional)
     - Decide if you want the repository to be public or private
         - This decision will not affect your ability to bring the repository into the Labs Platform.  All repositories are treated as private by default within the Labs Platform until you invite others to your project.
@@ -14,9 +14,9 @@ The following steps will walk you through creating a new repo in GitHub, importi
 
 ![Create a Repo](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/Create%20a%20new%20repository.png)
 
-- Navigate to app.blocksciencelabs.com
+2. Navigate to app.blocksciencelabs.com
     - If you do not have an account, follow the flow to create a new account.  You can see a video of these steps here: https://www.youtube.com/watch?v=Ev6nl2sI-7U
-- Click on ‘New Project’ on the Projects dashboard.
+3. Click on ‘New Project’ on the Projects dashboard.
     - Find the new repository you just created in GitHub.
     - Provide the project a name.
     - Provide the project a description (Optional)
@@ -24,25 +24,31 @@ The following steps will walk you through creating a new repo in GitHub, importi
 
 ![Import Project from GitHub](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/Import%20Project%20from%20GitHub.png)
 
-- Click on the name of your new project.
-- Navigate to the tab labeled ‘Notebook’
-    - It takes about 1 minute for a link to appear labeled ‘Open JupyterHub Server’.
-    - Click on the link labeled ‘Open JupyterHub Server’.
+4. Click on the name of your new project.
+5. Navigate to the tab labeled ‘JupyterLab’
+    - If the SERVER STATUS = NOT RUNNING, then click on the button labeled 'Start Server'.
+        - It takes about 1 minute the server status to change to RUNNING.
+    - Once the button changes to 'Open Server', click on the button to launch JupyterLab.
 
-IMAGE
+![JupyterLab Tab](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/JupyterLab%20Tab%20Not%20Started.png)
 
+![JupyterLab Tab Started](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/JupyterLab%20Tab%20Started.png)
 
-- On the upper right side of the screen, click on the dropdown menu labeled ‘New’ and select ‘Terminal’.
+6. Once in JupyterLab, you will see the Launcher tab.  Click on the button labeled 'Terminal'.
 
+IMAGE - JUPYTERLAB LAUNCHER
 
+- If you don't see the Launcher screen, or if you ever need to bring it back, you can click on the plus sign button under the main menu.
 
-- Create a new directory by typing: mkdir <dir name>
+IMAGE - JUPYTERLAB PLUS BUTTON FOR LAUNCHER
+
+7. Create a new directory by typing: mkdir <dir name>
     - Example 1: mkdir my_test_dir
     - Example 2: mkdir My_Labs_Project
-- Type cd <dir name>
+8. Type cd <dir name>
     - Example 1: cd my_test_dir
     - Example 2: cd My_Labs_Project
-- Now that you are in your new directory, type: cadcad-cli --interactive
+9. Now that you are in your new directory, type: cadcad-cli --interactive
     - NOTE: This will allow you to clone the cli tool that contains a template for a Labs compatible project.  You can use this as a starting point for your model.  The cli tool has many other useful templates for creating cadCAD models.  Check out https://github.com/cadCAD-org/cadcad-cli to learn more.
     - The terminal will return the following text: Template <simple|normal>:
     - Type: labs
@@ -51,7 +57,7 @@ IMAGE
 
 ![Output from Terminal](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/CLI%20Output%20from%20Terminal.png)
     
-- At this point you have two options:
+10. At this point you have two options:
     - Option A: Go to your local environment and work with the new repo to build your model.
     - Option B: Close the terminal window and work within the Labs Platform in JupyterHub, updating each file to build your model.
 
@@ -65,10 +71,10 @@ TBD
 Once you have a working model, you can then run your experiments in the Labs Platform.
 
 What you will need:
-Create a labs.py file in the root of your project
-In your labs.py file, import the exp object from your model
-In your labs.py file, create a variable called model_dir and assign it the path to the directory that contains your model
-In your cadCAD configuration, supply a model_id
+1. Create a labs.py file in the root of your project
+2. In your labs.py file, import the exp object from your model
+3. In your labs.py file, create a variable called model_dir and assign it the path to the directory that contains your model
+4. In your cadCAD configuration, supply a model_id
  
 Because you used the CLI tool to create your starting model, the first three steps have already been taken care of for you.  You will still need to do the last step to create a model_id in your cadCAD configuration.
  
