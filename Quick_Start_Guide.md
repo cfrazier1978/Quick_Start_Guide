@@ -29,7 +29,7 @@ The following steps will walk you through creating a new repo in GitHub, importi
     - It takes about 1 minute for a link to appear labeled ‘Open JupyterHub Server’.
     - Click on the link labeled ‘Open JupyterHub Server’.
 
-
+IMAGE
 
 
 - On the upper right side of the screen, click on the dropdown menu labeled ‘New’ and select ‘Terminal’.
