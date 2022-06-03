@@ -36,23 +36,23 @@ The following steps will walk you through creating a new repo in GitHub, importi
 
 6. Once in JupyterLab, you will see the Launcher tab.  Click on the button labeled 'Terminal'.
 
-IMAGE - JUPYTERLAB LAUNCHER
+![JupyterLab Launcher](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/JupyterLab%20Launcher.png)
 
 - If you don't see the Launcher screen, or if you ever need to bring it back, you can click on the plus sign button under the main menu.
 
-IMAGE - JUPYTERLAB PLUS BUTTON FOR LAUNCHER
+![Launcher Plus Sign](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/JupyterLab%20Plus%20Button%20for%20Launcher.png)
 
-7. Create a new directory by typing: mkdir <dir name>
-    - Example 1: mkdir my_test_dir
-    - Example 2: mkdir My_Labs_Project
-8. Type cd <dir name>
-    - Example 1: cd my_test_dir
-    - Example 2: cd My_Labs_Project
-9. Now that you are in your new directory, type: cadcad-cli --interactive
+7. Create a new directory by typing: `mkdir <dir name>`
+    - Example 1: `mkdir my_test_dir`
+    - Example 2: `mkdir My_Labs_Project`
+8. Type cd `<dir name>`
+    - Example 1: `cd my_test_dir`
+    - Example 2: `cd My_Labs_Project`
+9. Now that you are in your new directory, type: `cadcad-cli --interactive`
     - NOTE: This will allow you to clone the cli tool that contains a template for a Labs compatible project.  You can use this as a starting point for your model.  The cli tool has many other useful templates for creating cadCAD models.  Check out https://github.com/cadCAD-org/cadcad-cli to learn more.
-    - The terminal will return the following text: Template <simple|normal>:
-    - Type: labs
-    - Example: Template <simple|normal>: labs
+    - The terminal will return the following text: `Template <simple|normal>:`
+    - Type: `labs`
+    - Example: `Template <simple|normal>: labs`
     - You will see the following output:
 
 ![Output from Terminal](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/CLI%20Output%20from%20Terminal.png)
@@ -64,35 +64,47 @@ IMAGE - JUPYTERLAB PLUS BUTTON FOR LAUNCHER
 
 NOTE: If you are building your model in the Labs Platform, be sure to commit your changes in the terminal.  To do so, you will need to do the following:
 
-TBD
+1. Change your directory using `cd ` to where you want to make the commit.
+- Example 1: `cd Quick_Start_Guide`
+- Example 2: `cd my_test_dir`
+2. Add the content to your commit by typing `git add .`
+3. Create the commit by typing `git commit -m 'message'`
+- You will enter some short message about why you are making the commit.
+4. Push the commit to your repo with `git push origin <branch>`
+- You will need to enter in the name of the branch that you are pushing the commit to.
+    - Example 1: `git push origin main`
+    - Example 2: `git push origin TestBranch`
 
 
 ## Part 2: Running your Experiments
 Once you have a working model, you can then run your experiments in the Labs Platform.
 
 What you will need:
-1. Create a labs.py file in the root of your project
-2. In your labs.py file, import the exp object from your model
-3. In your labs.py file, create a variable called model_dir and assign it the path to the directory that contains your model
-4. In your cadCAD configuration, supply a model_id
+1. Create a `labs.py` file in the root of your project.
+2. In your `labs.py` file, import the `exp` object from your model.
+3. In your `labs.py` file, create a variable called `model_dir` and assign it the path to the directory that contains your model.
+4. In your cadCAD configuration, supply a `model_id`.
  
 Because you used the CLI tool to create your starting model, the first three steps have already been taken care of for you.  You will still need to do the last step to create a model_id in your cadCAD configuration.
  
-From the Labs Platform, go to your project and select the ‘Simulations’ tab.
-Click on ‘Run Simulation’
-On the ‘General Info’ step, enter a name for your simulation.  If a branch isn’t selected, you will need to choose which branch your simulation is located.
-If you run into a Labs.py error, please review this video on the steps to fix: https://www.youtube.com/watch?v=WFUtcP6u56Y
-After a few seconds, your available system models will be listed on the ‘System Models’ step.  Select all the system models that are applicable to the simulation run.
-On the ‘Time & Cost’ step, review the estimated time and cost to execute the simulation and make sure you select your payment method.  If everything looks acceptable, click ‘Execute’ on the lower right of the screen.
-After you execute the simulation, you will be taken back to the ‘Simulations’ tab of your project and a simulation will be added to your list of simulations.
-Once your simulation finishes executing, click on the ‘Notebook’ tab.  You will want to note the ID for your simulation.
+1. From the Labs Platform, go to your project and select the ‘Simulations’ tab.
 
+2. Click on ‘Run Simulation’
+- On the ‘General Info’ step, enter a name for your simulation.  If a branch isn’t selected, you will need to choose which branch your simulation is located.
+- If you run into a Labs.py error, please review this video on the steps to fix: https://www.youtube.com/watch?v=WFUtcP6u56Y
+- After a few seconds, your available system models will be listed on the ‘System Models’ step.  Select all the system models that are applicable to the simulation run.
+- On the ‘Time & Cost’ step, review the estimated time and cost to execute the simulation and make sure you select your payment method.  If everything looks acceptable, click ‘Execute’ on the lower right of the screen.
+3. After you execute the simulation, you will be taken back to the ‘Simulations’ tab of your project and a simulation will be added to your list of simulations.
 
+4. Once your simulation finishes executing, You will want to note the ID for your simulation.
 
-It takes about 1 minute for a link to appear labeled ‘Open JupyterHub Server’.
-Click on the link labeled ‘Open JupyterHub Server’.
+![Simulation ID](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/Simulation%20ID.png)
 
+5. click on the ‘JupyterLab’ tab and start the server.  
+- It takes about 1 minute the server status to change to RUNNING.
+6. Once the button changes to 'Open Server', click on the button to launch JupyterLab.
 
+![JupyterLab Tab Started](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/JupyterLab%20Tab%20Started.png)
 
 On the upper right side of the screen, click on the dropdown menu labeled ‘New’ and select ‘Python 3 (ipykernel)’.
 
