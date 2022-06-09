@@ -106,65 +106,43 @@ Because you used the CLI tool to create your starting model, the first three ste
 
 ![JupyterLab Tab Started](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/JupyterLab%20Tab%20Started.png)
 
-On the upper right side of the screen, click on the dropdown menu labeled ‘New’ and select ‘Python 3 (ipykernel)’.
+7. Using the Launcher tab, click on the Python3 (ipyKernal) under the Notebook section to open a new Jupyter Notebook.
 
+8. Since you entered JupyterLab from the Labs Platform, you are auto authenticated under the same username and password you use to log into the Labs Platform.  Because of this, you can use the Labs SDK to access the simulation results in the database.  In the first cell, enter in the following code:
 
+`import pandas as pd`
 
-Type the following text into the first cell of your Jupyter Notebook
+`from blocksciencelabs import Client`
 
-import blocksciencelabs as labs
-import psycopg2 as pg
+`labs = Client()`
 
-conn = pg.connect(
-    CENSORED!
-)
+`results = labs.fetch_results(<simulation ID>)`
 
-sim_id = <Simulation ID>
+`df = pd.DataFrame(results)`
 
-labs.fetch_results(sim_id, conn)
+`df`
 
-Example 1 (from reference image above):
+- Example 1: `results = labs.fetch_results(24)`
+- Example 2: `results = labs.fetch_results(136)`
 
-import blocksciencelabs as labs
-import psycopg2 as pg
+9. Now that your simulation results are in a dataframe, you can proceed to explore your data during your post-processing analysis.  Visualization and graphical Python packages are not added intentionally so that you can choose the package that works best for you.  You can `pip install` the package of your choice directly in the Jupyter Notebook using the following example code:
+- Example 1: `!pip install matplotlib`
+- Example 2: `!pip install plotly`
 
-conn = pg.connect(
-    CENSORED!
-)
+REMINDER: If you perform your analysis in the Labs Platform, be sure to commit your changes in the terminal.  See the example above to make your commits from the terminal.
 
-sim_id = 24
-
-labs.fetch_results(sim_id, conn)
-
-Example 2 (from reference image above):
-
-import blocksciencelabs as labs
-import psycopg2 as pg
-
-conn = pg.connect(
-    CENSORED!
-)
-
-sim_id = 26
-
-labs.fetch_results(sim_id, conn)
-
-
-You can now access your data from the notebook and continue with all your post processing.
-
-
-NOTE: If you perform your analysis in the Labs Platform, be sure to commit your changes in the terminal.  To do so, you will need to do the following:
-
-TBD
-
-Part 3: Sharing Your Work
+# Part 3: Sharing Your Work
 
 Now that you have finished your analysis and have results that you want to share, you will want to add others to your project so that they can see your work.
 
-Within your project, click on the ‘Access Control’ tab.
-Click on the ‘Add Collaborator’ button.
+1. Within your project, click on the ‘Access Control’ tab.
 
+![Add Collaborator Tab](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/Add%20Collaborator%20to%20a%20Project.jpg)
 
+2. Click on the ‘Add Collaborator’ button.
+
+![Add Collaborator Button](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/Add%20Collaborator%20Button.png)
+%20
 
 Enter in the email address of the user that you want to invite to your project and click the ‘Add Collaborator’ button.
 
