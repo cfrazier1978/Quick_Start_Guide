@@ -162,4 +162,4 @@ Now that you have finished your analysis and have results that you want to share
 - Their name will be added to the list of users with access to the project.
 - The invited user will now see the project added to their Project’s dashboard.  They will be able to navigate to the ‘Notebook’ tab and see your Jupyter Notebook.
 
-Do you have any questions or comments regarding this quick start guide?  Please let us know at contact@blocksciencelabs.com.
+Do you have any questions or comments regarding this quick start guide?  Please let us know at contact@blocksciencelabs.com and put 'Quick Start Guide' in the subject line.
