@@ -1,6 +1,6 @@
 # Quick Start Guide - Labs Platform
 ## Purpose
-The purpose of this document is to list out the steps someone would take when starting a new project all the way through sharing that project with others.
+The purpose of this document is to provide you with an overview of how to use the BlockScience Labs Platform.  After reviewing this document, you will know how to to create a new repo, use the CLI tool to add a new cadCAD template, run a simulation and then review the data within JupyterLab using the Labs SDK and finally how to invite others to join you in your project.
 ## Part 1: Getting Started
 The following steps will walk you through creating a new repo in GitHub, importing the repo into the Labs Platform and then cloning a platform compatible cadCAD template.
 
@@ -14,17 +14,21 @@ The following steps will walk you through creating a new repo in GitHub, importi
 
 ![Create a Repo](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/Create%20a%20new%20repository.png)
 
-2. Navigate to app.blocksciencelabs.com
+2. Navigate to https://app.blocksciencelabs.com
     - If you do not have an account, follow the flow to create a new account.  You can see a video of these steps here: https://www.youtube.com/watch?v=Ev6nl2sI-7U
+
+
 3. Click on ‘New Project’ on the Projects dashboard.
-    - Find the new repository you just created in GitHub.
+    - Find the new repository you created in GitHub.
     - Provide the project a name.
-    - Provide the project a description (Optional)
+    - Provide the project a description (Optional).
+        - Descriptions are helpful for collaborators to know the goals of the project.
     - Click ‘Create’.  This will add the project to your project dashboard.
 
 ![Import Project from GitHub](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/Import%20Project%20from%20GitHub.png)
 
 4. Click on the name of your new project.
+
 5. Navigate to the tab labeled ‘JupyterLab’
     - If the SERVER STATUS = NOT RUNNING, then click on the button labeled 'Start Server'.
         - It takes about 1 minute the server status to change to RUNNING.
@@ -45,9 +49,13 @@ The following steps will walk you through creating a new repo in GitHub, importi
 7. Create a new directory by typing: `mkdir <dir name>`
     - Example 1: `mkdir my_test_dir`
     - Example 2: `mkdir My_Labs_Project`
+
+
 8. Type cd `<dir name>`
     - Example 1: `cd my_test_dir`
     - Example 2: `cd My_Labs_Project`
+
+
 9. Now that you are in your new directory, type: `cadcad-cli --interactive`
     - NOTE: This will allow you to clone the cli tool that contains a template for a Labs compatible project.  You can use this as a starting point for your model.  The cli tool has many other useful templates for creating cadCAD models.  Check out https://github.com/cadCAD-org/cadcad-cli to learn more.
     - The terminal will return the following text: `Template <simple|normal>:`
@@ -67,9 +75,13 @@ NOTE: If you are building your model in the Labs Platform, be sure to commit you
 1. Change your directory using `cd ` to where you want to make the commit.
 - Example 1: `cd Quick_Start_Guide`
 - Example 2: `cd my_test_dir`
+
+
 2. Add the content to your commit by typing `git add .`
+
 3. Create the commit by typing `git commit -m 'message'`
 - You will enter some short message about why you are making the commit.
+
 4. Push the commit to your repo with `git push origin <branch>`
 - You will need to enter in the name of the branch that you are pushing the commit to.
     - Example 1: `git push origin main`
@@ -142,11 +154,12 @@ Now that you have finished your analysis and have results that you want to share
 2. Click on the ‘Add Collaborator’ button.
 
 ![Add Collaborator Button](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/Add%20Collaborator%20Button.png)
-%20
 
-Enter in the email address of the user that you want to invite to your project and click the ‘Add Collaborator’ button.
+3. Enter in the email address of the user that you want to invite to your project and click the ‘Add Collaborator’ button.
 
+![Add Collaborator Modal](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/Add%20Collaborator%20Modal.png)
 
+- Their name will be added to the list of users with access to the project.
+- The invited user will now see the project added to their Project’s dashboard.  They will be able to navigate to the ‘Notebook’ tab and see your Jupyter Notebook.
 
-Their name will be added to the list of users with access to the project.
-The invited user will now see the project added to their Project’s dashboard.  They will be able to navigate to the ‘Notebook’ tab and see your Jupyter Notebook.
+Do you have any questions or comments regarding this quick start guide?  Please let us know at contact@blocksciencelabs.com.
