@@ -72,7 +72,7 @@ The following steps will walk you through creating a new repo in GitHub, importi
 
 NOTE: If you are building your model in the Labs Platform, be sure to commit your changes in the terminal.  To do so, you will need to do the following:
 
-1. Change your directory using `cd ` to where you want to make the commit.
+1. `cd` into your project directory.
 - Example 1: `cd Quick_Start_Guide`
 - Example 2: `cd my_test_dir`
 
