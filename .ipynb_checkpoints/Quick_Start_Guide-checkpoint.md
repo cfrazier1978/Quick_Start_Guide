@@ -2,9 +2,9 @@
 ## Purpose
 The purpose of this document is to provide you with an overview of how to use the BlockScience Labs Platform.  After reviewing this document, you will know how to to create a new repo, use the CLI tool to add a new cadCAD template, run a simulation and then review the data within JupyterLab using the Labs SDK and finally how to invite others to join you in your project.
 ## Part 1: Getting Started
-The following steps will walk you through creating a new repo in GitHub, importing the repo into the Labs Platform and then cloning a platform compatible cadCAD template.
+The following steps will walk you through creating a new repo in GitHub, import the repo into the Labs Platform and then clone a platform compatible cadCAD template to your new repo.
 
-1. Create a new repo in GitHub
+1. Go to https://github.com and sign in to your account.  From there, click on the 'New' button to create a new repo in GitHub.  On the next screen, do the following:
     - Give your repository a name.
     - Provide a description of the repository (Optional)
     - Decide if you want the repository to be public or private
@@ -65,7 +65,7 @@ The following steps will walk you through creating a new repo in GitHub, importi
 
 ![Output from Terminal](https://raw.githubusercontent.com/cfrazier1978/Quick_Start_Guide/main/Images/CLI%20Output%20from%20Terminal.png)
     
-10. At this point you have two options:
+10. You will then want to commit your changes.  See how below.  At this point you have two options:
     - Option A: Go to your local environment and work with the new repo to build your model.
     - Option B: Close the terminal window and work within the Labs Platform in JupyterHub, updating each file to build your model.
 
@@ -143,7 +143,7 @@ Because you used the CLI tool to create your starting model, the first three ste
 
 REMINDER: If you perform your analysis in the Labs Platform, be sure to commit your changes in the terminal.  See the example above to make your commits from the terminal.
 
-# Part 3: Sharing Your Work
+## Part 3: Sharing Your Work
 
 Now that you have finished your analysis and have results that you want to share, you will want to add others to your project so that they can see your work.
 

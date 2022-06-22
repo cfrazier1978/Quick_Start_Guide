@@ -143,7 +143,7 @@ Because you used the CLI tool to create your starting model, the first three ste
 
 REMINDER: If you perform your analysis in the Labs Platform, be sure to commit your changes in the terminal.  See the example above to make your commits from the terminal.
 
-# Part 3: Sharing Your Work
+## Part 3: Sharing Your Work
 
 Now that you have finished your analysis and have results that you want to share, you will want to add others to your project so that they can see your work.
 
